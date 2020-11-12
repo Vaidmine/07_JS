@@ -27,10 +27,10 @@ console.log(names);
 //VEIKSMAI
 //*******************/
 
-const sum = age + year + luckynumber;
+const sum = age + year + lottery;
 console.log(sum);
 
-const aaa = name1 + ' ' + city + ' ' + airplain;
+const aaa = name1 + ' ' + city + ' ' + lottery;
 //const aaa = `${name1} ${city} ${airplaine}`;
 console.log(aaa);
 
@@ -46,7 +46,7 @@ marksMath = marksMath - marks[1];
 console.log(marksMath);
 
 
-//4 sujungti sarasu vertes (cities ir names)
+//4 sujungti sarasu vertes (cities ir names) '' - default reiksme tusciam tekstui
 let allCities = '';
 
 //allCities = allCities + cities[0] + ', ';
