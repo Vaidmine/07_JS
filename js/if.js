@@ -2,6 +2,7 @@
 galimi operatoriai: >, <, >=, <=, ==, !=, ===, !==
 naudotini: >, <, >=, <=,===, !==
 nenaudotini: ==, !=
+draudziami: 
 */
 
 /* 
@@ -77,3 +78,14 @@ if(zodis1 < zodis2) {
 }   else {
     console.log(false);
 }
+
+
+/*
+- kintamieji
+- salygos funkcijos
+- ciklo funkcijos
+- funkcijos
+- event liners
+
+*/
+
