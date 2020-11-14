@@ -61,5 +61,5 @@ allCities = allCities + ', ' + cities[3];
 console.log(allCities);
 
 
-
+//*******************/
 
