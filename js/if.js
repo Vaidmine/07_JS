@@ -2,7 +2,7 @@
 galimi operatoriai: >, <, >=, <=, ==, !=, ===, !==
 naudotini: >, <, >=, <=,===, !==
 nenaudotini: ==, !=
-draudziami: 
+draudziami: =>, =< (tokiu nera)
 */
 
 /* 
