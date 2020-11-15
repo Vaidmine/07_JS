@@ -1,24 +1,37 @@
 const kiek = 5;
 
-for (let i=3; i < kiek; i++ ) {
+for (let i=0; i < kiek; i++ ) {
 //     //logika
     console.log('labas rytas', i);
  }
-
  console.log('pabaiga');
+
+//template sample:
+
+ // for (let index = 0; index < Array.length; index++) {
+ //    const element = Array[index];
+ // }
 
 let number = 7;
 console.log(number);
-
+number++;
+console.log(number);
+number++;
+console.log(number);
 number++;
 console.log(number);
 
-number++;
-console.log(number);
 
-number++;
-console.log(number);
+//********************** */
+console.log('-------')
 
+console.log(number);
+number--;
+console.log(number);
+number--;
+console.log(number);
+number--;
+console.log(number);
 
 //********************** */
 console.log('-------')
@@ -86,7 +99,7 @@ for (let pozicija = abc.length - 1; pozicija >=0; pozicija--) {
 console.log('---------');
 
 /* console isvalymas */ 
-console.clear();
+/*console.clear();*/
 
 const text = 'dodekahedronas';
 
@@ -102,7 +115,7 @@ for (let i=0; i < text.length; i++){
 }
 
 console.log('---------');
-console.clear();
+//console.clear();
  /* dotas zodis, is jo isrintii kas antra raide ir isspausdinti
  pvz abcdef -->> bdf 
  pvz pomidoras (2) -->> oioa 
