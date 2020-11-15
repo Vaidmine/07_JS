@@ -1,8 +1,8 @@
 /* Palyginimo salyga (if):
 galimi operatoriai: >, <, >=, <=, ==, !=, ===, !==
-naudotini: >, <, >=, <=,===, !==
+NAUDOTINI: >, <, >=, <=,===, !==
 nenaudotini: ==, !=
-draudziami: =>, =< (tokiu nera)
+draudziami: =>, =< (tokiu nera) ;)
 */
 
 /* 
