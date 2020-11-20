@@ -116,10 +116,8 @@ console.log(multiply(2, 3) );
 
 
 
-
-
 // priima vieną kintamąjį, jei perduotas kintamasis nėra skaičiaus tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
-// priešingu atveju, funkcija tęsia darbą į atskirą kintamąjį įsimena skaičių sudarančių skaitmenų kiekį gražina skaitmenų kiekį
+// priešingu atveju, funkcija tęsia darbą į atskirą kintamąjį įsimena skaičių sudarančių skaitmenų kiekį, gražina skaitmenų kiekį
 // TESTAI:
 // console.log( skaitmenuKiekisSkaiciuje( 5 ) );
 // rezultatas: 1
@@ -135,15 +133,19 @@ console.log(multiply(2, 3) );
 // rezultatas: “Pateikta netinkamo tipo reikšmė.”
 
 
-function skaitmenukiekisskaiciuje (skaic) {
-    if typeof skaic !== 'number' ) {
-        return "pateika netinkamo tipo reiksme";
-       let kiekis = skaic.length;
-       console.log(kiekis);
-
+function skaitmenuKiekisSkaiciuje (skaic) {
+    if ( typeof skaic !== 'number' ) {
+        return "Pateikta netinkamo tipo reiksme." ;
     }
     skaic = skaic + '';
     let kiekis = skaic.length;
+    
     return kiekis;
 }
-console.log (skaitmenukiekisskaiciuje('labas")) '>>> 1');
+
+
+console.log(skaitmenuKiekisSkaiciuje(5), ' -> 1');
+console.log(skaitmenuKiekisSkaiciuje(781), ' -> 3');
+console.log(skaitmenuKiekisSkaiciuje(37060123456), ' -> 11');
+console.log(skaitmenuKiekisSkaiciuje(true), );
+console.log(skaitmenuKiekisSkaiciuje('a'), );
