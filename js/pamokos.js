@@ -76,7 +76,37 @@ console.log("----------------------------------");
     console.log(wordArr[i]);
  }
 
+ console.log("----------------------------------");
+//  Write a function that returns a string in which firstname is swapped with last name.
+// nameShuffler('john McClane'); => "McClane john"
+// function nameShuffler(str){
+//     str = str + " ";
+//     return str.split("").reverse().join("")
+//   }
 
+//   Test Results:
+// Expected: 'McClane john', instead got: ' enalCcM nhoj'
+
+// function nameShuffler(str){
+//     str = str + " ";
+//     return str.split("str").reverse().join("")
+//   }
+
+function nameShuffler(str){
+    let wordArr = str.split(" ");
+    let wordArrRev = [];
+    for(let i = wordArr.length-1; i >= 0 ; i--){
+      wordArrRev.push( wordArr[ i ] );
+    }
+    let revStr = "";
+     for(let i = 0 ; i <  wordArrRev.length; i++){
+     revStr += wordArrRev[i];
+       if(i < wordArrRev.length-1){
+         revStr+=" ";
+       }
+    }
+    return revStr;
+  }
 
  console.log("----------------------------------");
  //KINTAMUJU PALYGINIMAS// 

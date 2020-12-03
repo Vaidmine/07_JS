@@ -175,24 +175,97 @@ console.log("----------------------------------");
 // console.log( didziausiasSkaiciusSarase( [] ) );
 // rezultatas: “Pateiktas sąrašas negali būti tuščias.”
 
-function didziausiasSkaiciusSarase(sarasas){
-    if (typeof sarasas!== 'object') {
+console.log("--------------------------");
+
+function didziausiasSkaiciusSarase(sarasas) {
+        if (typeof sarasas!== 'object') {
         return "Pateikta netinkamo tipo reikšmė."
-    }
+}
 const size = sarasas.length;
-
-
 if (size ===0) {
     return "Pateiktas sąrašas negali būti tuščias.";
-    
 }
-let bigNum = sarasas[0];
+let bugNum = sarasas[0];
 for (let i = 0; i < size; i++) {
     const skaicius = sarasas[i];
-    if (type skaicius !== "number") {
-        continue;   
+
+    if (typeof skaicius !== "number") {
+        continue;
     }
-    if (bigNum < sarasas[i]){
-        bigNum = sarasas[i];
+    if (bugNum < sarasas[i]) {
+        bugNum = sarasas[i];    
     }
-    
+}
+   return sarasas; 
+}
+
+console.log(didziausiasSkaiciusSarase([1]), '>>>', 1);
+console.log(didziausiasSkaiciusSarase([1, 2, 3]), '>>>', 3);
+console.log(didziausiasSkaiciusSarase([ -5, 78, 14, 0, 18 ]), '>>>', 78);
+console.log(didziausiasSkaiciusSarase([69, 69, 69, 69, 66 ]), '>>>', 69);
+console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8 ]), '>>>', -1);
+console.log(didziausiasSkaiciusSarase('pomidoras'));
+console.log(didziausiasSkaiciusSarase([ ]));
+
+console.log("--------------------------");
+
+// priima du kintamuosius:
+// pirmasis nurodo tekstą, su kuriuo reikės atlikti užduotį
+// antrasis nurodo kas kelintą raidę išrinkti
+// 
+//patikrinti, ar pirmasis kintamasis yra teksto tipo:
+// jei ne, išvedame pranešimą “Pirmasis kintamasis yra netinkamo tipo.”
+// priešingu atveju tęsiame darbą
+
+// patikrinti, ar pirmasis kintamasis yra ne tuščias tekstas ir ne didesnis nei 100 simbolių:
+// jei ne, išvedame pranešimą “Pirmojo kintamojo reikšmė yra netinkamo dydžio.”
+// priešingu atveju tęsiame darbą
+
+// patikrinti, ar antrasis kintamasis yra skaičiaus tipo:
+// jei ne, išvedame pranešimą “Antrasis kintamasis yra netinkamo tipo.”
+// priešingu atveju tęsiame darbą
+
+// patikriname, ar antrojo kintamojo vertė yra didesnė už nulį:
+// jei ne, išvedame pranešimą “Antrasis kintamasis turi būti didesnis už nulį.”
+// priešingu atveju tęsiame darbą
+
+// patikriname, ar antrojo kintamojo vertė yra ne didesnė už pirmojo kintamojo ilgį:
+// jei ne, išvedame pranešimą “Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.”
+// priešingu atveju tęsiame darbą
+
+// išrenkame iš nurodyto teksto kas kelintą raidę (pagal antrojo kintamojo žingsnį)
+// išrinktas raides sudėti į atskirą kintamąjį, kuris yra teksto tipo,
+// gražina rezultatą
+
+// TESTAI:
+// console.log( isrinktiRaides( “abcdefg”, 2 ) );
+// rezultatas: “bdf”
+// console.log( isrinktiRaides( “abcdefghijkl”, 3 ) );
+// rezultatas: “cfil”
+// console.log( isrinktiRaides( “abc”, 0 ) );
+// rezultatas: “Antrasis kintamasis turi būti didesnis už nulį.”
+// console.log( isrinktiRaides( “abc”, 4 ) );
+// rezultatas: “Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.”
+// console.log( isrinktiRaides( 1561, 2 ) );
+// rezultatas: “Pirmasis kintamasis yra netinkamo tipo.”
+
+
+
+function isrinktiRaides(text, step) {
+    if (typeof text !== 'string') {
+        return "Pirmasis kintamasis yra netinkamo tipo.";  
+    }
+    if (text === '') {
+        return "Pirmojo kintamojo reikšmė yra netinkamo dydžio.";    
+    }
+    if (typeof step !== 'number') {
+        return 'Antrasis kintamasis yra netinkamo tipo.';
+    }
+    if (step <= 0) {
+        return 'Antrasis kintamasis turi būti didesnis už nulį.';
+    }
+}
+
+
+
+console.log(isrinktiRaides('abcdefg', 2) '>>>' '???');
